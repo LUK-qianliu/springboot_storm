@@ -1,0 +1,32 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# 设置jsp的访问目录
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+# 禁用thymeleaf静态模板
+  thymeleaf:
+    cache: false
+    enabled: false
+
+# 防止乱码
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+
+
+
